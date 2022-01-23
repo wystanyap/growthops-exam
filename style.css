@@ -1,0 +1,131 @@
+/* global styles */
+@font-face {
+    font-family: 'AIATitle';
+    src: url("fonts/AIAEverest-CondensedMedium.woff2") format("woff2"),url("fonts/AIAEverest-CondensedMedium.woff") format("woff"),url("fonts/AIAEverest-CondensedMedium.otf") format("opentype"),url("fonts/AIAEverest-CondensedMedium.ttf") format("truetype"),url("fonts/AIAEverest-CondensedMedium.svg#AIAEverestCondensedMedium") format("svg");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'AIABody';
+    src: url("fonts/AIAEverest-Regular.woff2") format("woff2"),url("fonts/AIAEverest-Regular.woff") format("woff"),url("fonts/AIAEverest-Regular.otf") format("opentype"),url("fonts/AIAEverest-Regular.ttf") format("truetype"),url("fonts/AIAEverest-Regular.svg#AIAEverestCondensed") format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'AIABody';
+    src: url("fonts/AIAEverest-Medium.woff2") format("woff2"),url("fonts/AIAEverest-Medium.woff") format("woff"),url("fonts/AIAEverest-Medium.otf") format("opentype"),url("fonts/AIAEverest-Medium.ttf") format("truetype"),url("fonts/AIAEverest-Medium.svg#AIAEverestCondensed") format("svg");
+    font-weight: 600;
+    font-style: normal
+}
+
+html, body {
+    -webkit-font-smoothing: antialiased;
+}
+
+p {
+    font-family: "AIABody","Calibri",sans-serif;
+}
+
+[v-cloak] {
+    display:none;
+}
+
+
+
+/* nav style */
+#myNav {
+    background-color: #d31145;
+}
+
+#myNav .nav-item .nav-link{
+    font-family: "AIATitle","Calibri",sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+/* district manager */
+#district-manager h3{
+    font-family: "AIATitle","Calibri",sans-serif;
+    text-align: center;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position:relative;
+}
+
+
+#district-manager{
+    height: 80px;
+    background-color: #faf9f4;
+    
+}
+
+.filter-container{
+    padding-top: 32px;
+    padding-bottom: 24px;
+}
+
+.filter-container select{
+    border-radius: 0;
+}
+
+
+/* card body*/
+.img-thumbnail{
+    border:0;
+}
+
+.card-container{
+    padding: 24px;
+}
+
+.card-container p{
+    margin-bottom: 4px;
+    line-height: 1rem;
+}
+
+/* date container */
+.date-container{
+    padding-bottom: 32px;
+}
+
+.date-container input,
+.date-container button{
+    border-radius: 0;
+}
+
+.date-container button{
+    font-family: "AIABody","Calibri",sans-serif;
+}
+
+
+/* media queries */
+@media only screen and (min-width: 992px) {
+    #myNav .nav-item .nav-link{
+        padding: 24px;
+        width: 100px;
+        height: 88px;
+    }
+    .navbar-nav {
+        margin-left:100px;
+    }
+    
+}
+
+  @media only screen and (max-width: 767px) {
+    .convert-btn{
+        text-align: center;
+        margin-top: 16px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .card-container-body{
+        min-height: 250px;
+    }
+}
+
